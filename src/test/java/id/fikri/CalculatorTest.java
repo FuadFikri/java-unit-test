@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.opentest4j.TestAbortedException;
 
 public class CalculatorTest {
 
@@ -30,5 +31,16 @@ public class CalculatorTest {
     @Test
     void testBelumDiBuat() {
         System.out.println("hi");
+    }
+
+
+    @Test
+    void testAbortedException() {
+        var profile = System.getenv("PROFILE");
+        if (!"DEV".equalsIgnoreCase(profile)) {
+            throw new TestAbortedException("test batal . ini bukan dev env !");
+        }
+
+//        unit test untuk dev
     }
 }
