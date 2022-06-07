@@ -1,9 +1,6 @@
 package id.fikri;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.opentest4j.TestAbortedException;
 
 public class CalculatorTest {
@@ -13,7 +10,7 @@ public class CalculatorTest {
 
     @Test
     void testAddSuccess() {
-        var result = calculator.add(10,10);
+        var result = calculator.add(10, 10);
         System.out.println(result);
         Assertions.assertEquals(20, result);
     }
@@ -22,7 +19,7 @@ public class CalculatorTest {
     @Test
     void testDivideFail() {
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            calculator.divide(10,0);
+            calculator.divide(10, 0);
         });
     }
 
@@ -42,5 +39,14 @@ public class CalculatorTest {
         }
 
 //        unit test untuk dev
+    }
+
+
+    @Test
+    void testAssumption() {
+
+        Assumptions.assumeTrue("DEV".equalsIgnoreCase(System.getenv("PROFILE")));
+
+        //test untuk dev
     }
 }
