@@ -23,3 +23,6 @@ source : programmer zaman now
 ### Test di dalam test
 - annotation @nested
 - jika test sudah terlalau banyak, lebih baik di pecah menjadi beberapa test class, lalu digrouping sesuai jenis method test nya
+
+### TestInfo
+- mendapatkan informasi dari subuah test
