@@ -18,3 +18,8 @@ source : programmer zaman now
 - annotation @TestInstance default nya adalah Lifecycle.PER_METHOD, artinya tiap method akan dibuat sebuah instance / object baru
 - Kita bisa merubahnya menjadi Lifecycle.PER_CLASS jika mau, dengan demikian instance / object test haya dibuat sekali per class, dan method test akan menggunakan object test yang sama
 - Lifecycle.PER_CLASS bisa kita manfaatkan jika ingin membuat test yang tergantung dengan test lain
+
+
+### Test di dalam test
+- annotation @nested
+- jika test sudah terlalau banyak, lebih baik di pecah menjadi beberapa test class, lalu digrouping sesuai jenis method test nya
