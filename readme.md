@@ -33,3 +33,5 @@ source : programmer zaman now
 - Saat kita menambah parameter di function unit test, sebenarnya kita bisa secara otomatis memasukkan parameter tersebut dengan bantuan ParameterResolver
 - Contohnya TestInfo yang kita bahas sebelumya, sebenarnya objectnya dibuat oleh TestInfoParameterResolver
 
+### Inheritance di test
+- Junit mendukung pwarisan di test
