@@ -26,3 +26,10 @@ source : programmer zaman now
 
 ### TestInfo
 - mendapatkan informasi dari subuah test
+
+
+### Dependency Injection
+- adalah bagaimana kita bisa memasukkan dependency (object/instance) ke dalam unit test secara otomatis tanpa proses manual
+- Saat kita menambah parameter di function unit test, sebenarnya kita bisa secara otomatis memasukkan parameter tersebut dengan bantuan ParameterResolver
+- Contohnya TestInfo yang kita bahas sebelumya, sebenarnya objectnya dibuat oleh TestInfoParameterResolver
+
