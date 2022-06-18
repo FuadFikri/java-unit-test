@@ -49,3 +49,6 @@ source : programmer zaman now
 - @CsvSource -> data CSV
 - @CsvFileSource -> file CSV
 - @ArgumentSource -> data dari class ArgumentProvider
+
+### Timeout test
+- untuk membatasi maksimum waktu yang diperlukan untuk menjalankan test
