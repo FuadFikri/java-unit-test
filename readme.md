@@ -39,3 +39,13 @@ source : programmer zaman now
 
 
 ### Repeated Test
+
+
+### Parameter Test
+- Annotation @ParameterizedTest
+- @ValueSource -> number, char, Boolean, String
+- @EnumSource -> enum
+- @MethodSource -> sumber dari static method
+- @CsvSource -> data CSV
+- @CsvFileSource -> file CSV
+- @ArgumentSource -> data dari class ArgumentProvider
