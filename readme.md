@@ -52,3 +52,13 @@ source : programmer zaman now
 
 ### Timeout test
 - untuk membatasi maksimum waktu yang diperlukan untuk menjalankan test
+
+
+### Parallel Test
+- Secara default, JUnit tidak mendukung eksekusi unit test secara paralel,
+- artinya unit test akan dijalankan secara sequential satu per satu
+- kadang ada kasus kita ingin mempercepat proses unit test sehingga dijalankan secara paralel, hal ini bisa kita lakukan di JUnit, namun perlu beberapa langkah
+- Hal pertama yang perlu kita lakukan adalah membuat file junit-platform.properties di resource
+- Lalu menambah value :
+  `junit.jupiter.execution.parallel.enabled = true`
+
