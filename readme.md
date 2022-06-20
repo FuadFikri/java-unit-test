@@ -62,3 +62,12 @@ source : programmer zaman now
 - Lalu menambah value :
   `junit.jupiter.execution.parallel.enabled = true`
 
+
+### Mocking
+- alasan : ketergantungan antar class
+- unit test yang bagus itu cukup test ke satu function, jika harus test iteraksi antar class, lebih disarankan integration test
+- Mocking sederhananya adalah membuat object tiruan
+- Hal ini dilakukan agar behavior object tersebut bisa kita tentukan sesuai dengan keinginan kita
+- Dengan mocking, kita bisa membuat request response seolah-olah object tersebut benar dibuat
+- salah satu framework mocking yang populer adalah Mockito
+- 
