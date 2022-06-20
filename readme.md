@@ -70,4 +70,5 @@ source : programmer zaman now
 - Hal ini dilakukan agar behavior object tersebut bisa kita tentukan sesuai dengan keinginan kita
 - Dengan mocking, kita bisa membuat request response seolah-olah object tersebut benar dibuat
 - salah satu framework mocking yang populer adalah Mockito
-- 
+- Mockito memiliki MockitoExtention yang bisa kita gunakan untuk integrasi dengan JUnit
+- Hal ini memudahkan kita ketika ingin membuat mock object, kita cukup gunakan @Mock
