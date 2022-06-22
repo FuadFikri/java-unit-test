@@ -5,4 +5,7 @@ import java.util.Optional;
 public interface PersonRepository {
 
     Optional<Person> findById(String id);
+
+
+    void insert(Person person);
 }
